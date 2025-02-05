@@ -100,3 +100,38 @@ img{
             color: #494949d9;
             background: white;
     }
+
+
+
+        .total-1,
+        .total-2 {
+            /* border: 1px solid; */
+            border: border 1px solid black;
+            background: white;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #494949d9;
+            font-size: 14px;
+            font-weight: 550;
+            position: absolute;
+            z-index: 10;
+            top: 331px;
+            left: 28.4px;
+            outline: none;
+        }
+    
+        .total-2 {
+            color: #8f8f8f;
+            font-weight: 500;
+            top: 351px;
+            left: 28.4px;
+            font-size: 13px;
+            outline: none;
+            border: none;
+            
+
+            
+        }
