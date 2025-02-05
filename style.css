@@ -45,3 +45,58 @@ img{
  outline: none;
  border: none;
 }
+
+
+.number-1,.number-2 {
+    /* border: 1px solid; */
+    border: border 1px solid black;
+    background: white;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #494949d9;
+    font-size: 15px;
+    font-weight: 550;
+    position: absolute;
+    z-index: 10;
+    top: 154px;
+     left: 73px;
+    outline: none;
+}
+
+.number-2{
+    color:#717171;
+    font-weight: 400;
+        top: 172px;
+        left: 73px;
+        outline: none;
+        border:none
+    }
+
+    .time{
+        position: absolute ;
+        z-index: 10;
+        top: 263px;
+            left: 21px;
+            outline: none;
+            border: none;
+            font-size: 13.5px;
+            font-weight: 550;
+            color: #494949d9;
+            background: white;
+    }
+    .id{
+        position: absolute ;
+        z-index: 10;
+        text-transform: uppercase;
+        top: 267px;
+            left: 230px;
+            outline: none;
+            border: none;
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #494949d9;
+            background: white;
+    }
