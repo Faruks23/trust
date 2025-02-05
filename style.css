@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    margin:0 auto;
+    max-width: 500px;
+    border: 1px solid;
+    margin-top: 20px;
+}
+.bk-send{
+    display: flex; 
+    justify-content: center;
+    position: relative;
+  
+        /* Full width */
+
+}
+img{
+    width: 100%;
+    height:auto;
+   
+}
+.mony{
+ border: 1px solid;
+ background: white;
+ width: 120px;
+ height: 25px;
+ display: flex ;
+ justify-content: center;
+ align-items: center;
+ color: #E2136E;
+ font-size: 15px;
+ font-weight: 550;
+ position: absolute ;
+ z-index: 10;
+ top: 29px;
+ border-radius: 20px;
+ left: 63px;
+ outline: none;
+ border: none;
+}
