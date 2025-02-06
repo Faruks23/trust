@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bk-send">
+            <img src="./img/account.png" alt="">
+            <div contenteditable="" class="total-mony">৳40,012.03</div>
+
+            <input class="activeColor" type="text" id="rem" value="৳1,09,987.97" >
+
+            <div contenteditable="" class="bid" style="color: rgb(254, 242, 0);">9/20</div>
+        </div>
+    </div>
+
+    <script>
+        const rem = document.getElementById('rem'); // Select the input field
+
+        rem.addEventListener('change', function () { // Trigger on change (after losing focus)
+            const value = rem.value.trim(); // Get the input value and remove extra spaces
+
+            if (value =='0.00') {
+                rem.style.color = "#0046bf"; // If value is 0, change to blue
+            } else {
+                rem.style.color ="red"; // Otherwise, change to red
+            }
+        });
+    </script>
+
+</body>
+
+</html>
