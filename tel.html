@@ -4,26 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Image Selector</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="bk-send ">
+        <div class="bk-send">
             <img src="./img/tel.png" alt="">
-            <div style="background: #101821; width: 150px; height: 19px; position: absolute; top:64px; right: 0px; z-index: 10;" class=""></div>
-            <!-- <div  class="tel-msg">
-                Yes sir
+            <div contenteditable="" class="bks"
+                style="position: absolute; z-index: 10; top: 195px; left: 22px;color: #7cbae9; font-size: 17px;font-weight: 500; letter-spacing: 2px; background:#232E3B;">
+                0156339136
+            </div>
+            <img src="" alt="" id="send-img">
 
-                <span contenteditable="">10:42 AM</span>
-            </div> -->
-            <div contenteditable="" class="bks" style=" position: absolute; z-index: 10; top: 167px; left: 22px;color: #649FCD; font-size: 17px;font-weight: 550; letter-spacing: 2px; background:#232E3B ;">0156339136</div>
-            <img src="/img/send-mony.png" alt="" id="send-img" >
+            <input style="position: absolute; z-index: 10; top: 500px; right: -63px;" type="file" id="imageInput"
+                accept="image/*">
 
-          
+
+                <div  contenteditable="" class="tel-time  tel-time-1">
+                    10:30 PM
+                </div>
+                <div  contenteditable="" class="tel-time  tel-time-2">
+                    10:30 PM
+                </div>
+                <div  contenteditable="" class="tel-time  tel-time-3">
+                    10:30 PM
+                </div>
+                <div  contenteditable="" class="tel-time  tel-time-4">
+                    10:30 PM
+                </div>
+                <div  contenteditable="" class="tel-time  tel-time-5">
+                    10:30 PM
+                </div>
+
+                <div contenteditable="" class="icon-message-read">
+                    10:40 PM <span style="color: white; font-size:10px;">&#10003;</span> <span style="color: white; font-size: 10px; margin-left: -5px;">&#10003;</span>
+                </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('imageInput').addEventListener('change', function (event) {
+            const file = event.target.files[0]; // Get the selected file
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('send-img').src = e.target.result; // Update image src
+                    document.getElementById('imageInput').style.display = "none"; // Hide input file
+                };
+                reader.readAsDataURL(file); // Convert file to data URL
+            }
+        });
+    </script>
 
 </body>
 
