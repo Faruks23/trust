@@ -228,36 +228,69 @@ img {
 }
 
 .activeColor {
- color: red ;
-   background: white;
-   position: absolute;
-   top: 292px;
-   left: 295px;
+  color: red;
+  background: white;
+  position: absolute;
+  top: 292px;
+  left: 295px;
 
-   border: none;
-   outline: none;
-   max-width: 110px;
-   padding: 3px 0px;
-   font-size:15.6799px;
-   font-weight: 700;
-    border: none;
-    outline: none;
-    
-
+  border: none;
+  outline: none;
+  max-width: 110px;
+  padding: 3px 0px;
+  font-size: 15.6799px;
+  font-weight: 700;
+  border: none;
+  outline: none;
 }
-input:focus{
-    background: white;
+input:focus {
+  background: white;
 }
 
-
-.bid{
-    background: #0046bf;
-    position: absolute;
-    bottom: 205px;
-    left: 130px;
-    z-index: 10;
-    font-size: 18.6799px;
-    font-weight: 700;
-    padding: 0 10px;
+.bid {
+  background: #0046bf;
+  position: absolute;
+  bottom: 205px;
+  left: 130px;
+  z-index: 10;
+  font-size: 18.6799px;
+  font-weight: 700;
+  padding: 0 10px;
 }
 
+.order-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 209px;
+  left: 20px;
+  background: white;
+}
+
+.order-container div {
+  color: black;
+}
+
+.profit {
+  font-size: 25.88px;
+  font-weight: 600;
+  background: white;
+  position: absolute;
+  bottom: 136px;
+  left: 22px;
+}
+
+.order-img{
+max-height: 360px !important;
+position: absolute;
+}
+
+.title{
+  font-size: 22.3999px;
+  font-weight: 600;
+  background: white;
+  position: absolute;
+  z-index: 10;
+  top: 360px;
+  left: 20px;
+}
